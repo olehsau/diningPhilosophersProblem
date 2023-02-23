@@ -1,0 +1,6 @@
+4
+Ashley 4
+Bob 20
+Clare 40
+Donald 8
+Edward 10
