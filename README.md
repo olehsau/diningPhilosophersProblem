@@ -1,1 +1,1 @@
-"# diningPhilosophersProblem" 
+dining kids problem
