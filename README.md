@@ -1,7 +1,11 @@
-dining kids problem
+My solution for Dining philosophers problem (Dining kids problem)
 
-Program przyjmuje jeden parametr: nazwa pliku wejściowego do wczytania.
+The program accepts one parameter: the name of the input file to be loaded.
+Input file structure:
+[number of kids]
+[name1] [hunger-time]
+[name2] [hunger-time2]
+...
 
-Plik w pierwszej linii zawiera ilość dzieci w danej grupie (jest to też ilość widelców). Następnie zawiera opisy dzieci; jeden przedszkolak na linię. Opis przedszkolaka zawiera jego imię oraz czas głodnienia. Imię oraz czas należy wykorzystać przy konstrukcji obiektów Child. Przedszkolaki siedzą w okręgu; ostatni sąsiaduje z przedostatnim oraz z pierwszym.
-
-Każdy obiekt Child tworzy wątek, który sprawdza, czy dane dziecko nie jest zbyt głodne. Jeśli jest zbyt głodne - zapłacze na System.err. Zadanie jest poprawnie rozwiązane, jeśli żadne dziecko nie zapłacze w trakcie obiadu (wykonania programu). Obiad trwa 10 sekund.
+Preschoolers sit in a circle, the last one is next to first one.
+Each Child object creates a thread that checks whether the child is too hungry. If it is too hungry - it cries on System.err. Lunch takes 10 seconds. If program runs correctly - no child should ever cry.
